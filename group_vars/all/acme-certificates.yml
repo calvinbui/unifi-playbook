@@ -1,13 +1,4 @@
 ---
-acme_certificate_domains:
-  - name: unifi.bui.io
-    tld: bui.io
-    email: "{{ cloudflare_email }}"
-    challenge: dns-01
-    script: unifi.sh
-    script_executable: /bin/bash
-    script_args: '"{{ keys.path }}/unifi.bui.io.crt" "{{ keys.path }}/unifi.bui.io.pem" "{{ keys.path }}/private.key" {{ unifi_docker_cert_folder }}'
-
 acme_certificate_cloudflare_email: !vault |
   $ANSIBLE_VAULT;1.1;AES256
   39646561643661613662343462383133343836313139383837366136313637323337313330626564
@@ -23,3 +14,12 @@ acme_certificate_cloudflare_api_token: !vault |
   3931313562623739630a363561643464333630373435343430333362646530313337663439313562
   35616635643933663836663834353133333539366630633333326564323437333038613762373730
   6132393235613166633664363564366639633337363765653930
+
+acme_certificate_domains:
+  - name: unifi.bui.io
+    tld: bui.io
+    email: "{{ acme_certificate_cloudflare_email }}"
+    challenge: dns-01
+    script: unifi.sh
+    script_executable: /bin/bash
+    script_args: '"{{ keys.path }}/unifi.bui.io.crt" "{{ keys.path }}/unifi.bui.io.pem" "{{ keys.path }}/private.key" {{ unifi_docker_cert_folder }}'
