@@ -11,5 +11,6 @@
   roles:
     - calvinbui.ansible_apt
     - calvinbui.ansible_java
+    - calvinbui.ansible_mongodb
     - calvinbui.ansible_unifi
     # - calvinbui.ansible_acme_certificates
