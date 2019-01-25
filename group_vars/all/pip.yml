@@ -1,0 +1,6 @@
+---
+pip_version: 3
+
+pip_install_packages:
+  - name: pyopenssl
+    version: '18.0.0'

@@ -13,4 +13,5 @@
     - calvinbui.ansible_java
     - calvinbui.ansible_mongodb
     - calvinbui.ansible_unifi
+    - calvinbui.ansible_pip
     - calvinbui.ansible_acme_certificates
