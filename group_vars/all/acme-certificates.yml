@@ -22,4 +22,4 @@ acme_certificate_domains:
     challenge: dns-01
     script: unifi.sh
     script_executable: /bin/bash
-    script_args: '"{{ keys.path }}/unifi.bui.io.crt" "{{ keys.path }}/unifi.bui.io.pem" "{{ keys.path }}/private.key" {{ unifi_docker_cert_folder }}'
+    script_args: '"{{ keys.path }}/unifi.bui.io.pem" "{{ keys.path }}/private.key" {{ keys.path }}'
