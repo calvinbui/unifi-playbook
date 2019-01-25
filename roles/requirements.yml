@@ -3,6 +3,9 @@
 - src: calvinbui.ansible_apt
   version: 1.0.0
 
+- src: calvinbui.ansible_java
+  version: 1.0.0
+
 - src: calvinbui.ansible_unifi
   version: '1.0.0'
 
