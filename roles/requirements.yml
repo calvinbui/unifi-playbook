@@ -1,12 +1,10 @@
 ---
-- src: calvinbui.ansible_docker
-  version: '1.1'
 
-- src: calvinbui.ansible_pip
-  version: '2.0.0'
+- src: calvinbui.ansible_apt
+  version: 1.0.0
 
-- src: calvinbui.ansible_unifi_docker
-  version: '2.0.0'
+- src: calvinbui.ansible_unifi
+  version: '1.0.0'
 
 - src: calvinbui.ansible_acme_certificates
   version: '1.1.1'

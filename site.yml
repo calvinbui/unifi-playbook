@@ -9,7 +9,6 @@
       changed_when: false
       when: ansible_os_family == 'Debian'
   roles:
-    - calvinbui.ansible_docker
-    - calvinbui.ansible_pip
-    - calvinbui.ansible_unifi_docker
-    - calvinbui.ansible_acme_certificates
+    - calvinbui.ansible_apt
+    - calvinbui.ansible_unifi
+    # - calvinbui.ansible_acme_certificates
