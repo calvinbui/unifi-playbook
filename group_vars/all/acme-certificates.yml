@@ -16,10 +16,10 @@ acme_certificate_cloudflare_api_token: !vault |
   6132393235613166633664363564366639633337363765653930
 
 acme_certificate_domains:
-  - name: unifi.bui.io
-    tld: bui.io
+  - name: unifi.bui.sh
+    tld: bui.sh
     email: "{{ acme_certificate_cloudflare_email }}"
     challenge: dns-01
     script: unifi.sh
     script_executable: /bin/bash
-    script_args: '"{{ keys.path }}/unifi.bui.io.pem" "{{ keys.path }}/private.key" {{ keys.path }}'
+    script_args: '"{{ keys.path }}/unifi.bui.sh.pem" "{{ keys.path }}/private.key" {{ keys.path }}'
