@@ -17,3 +17,6 @@
 
 - src: calvinbui.ansible_acme_certificates
   version: '1.5.0'
+
+- src: calvinbui.ansible_datadog
+  version: '1.0.2'
